@@ -15,7 +15,7 @@ Public Class EtherController
         Dim transactions = New List(Of JObject)
 
         logger.Info("Start eth_getBlockByNumber Block 12100001 to 12100500 ")
-        For i As Integer = 12100001 To 12100003
+        For i As Integer = 12100001 To 12100500
             request.AddOrUpdateParameter("module", "proxy")
             request.AddOrUpdateParameter("action", "eth_getBlockByNumber")
             request.AddOrUpdateParameter("tag", "0x" + Hex(i).ToString())

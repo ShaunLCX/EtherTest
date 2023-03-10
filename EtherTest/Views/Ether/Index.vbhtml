@@ -16,13 +16,6 @@ End Code
         </tr>
     </thead>
     <tbody>
-        @For Each tx In Model
-            @<tr>
-                <td>@Convert.ToInt32(tx("blockNumber").ToString(), 16)</td>
-                <td>@tx("hash")</td>
-                <td>@tx("from")</td>
-                <td>@tx("to")</td>
-            </tr>
-        Next
+
     </tbody>
 </table>
