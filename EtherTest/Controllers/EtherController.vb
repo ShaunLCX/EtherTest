@@ -8,7 +8,6 @@ Public Class EtherController
 
     Public Async Function Index() As Task(Of ActionResult)
 
-        ViewBag.Transactions = transactions
         Dim logger = NLog.LogManager.GetCurrentClassLogger()
         Dim client = New RestClient("https://api.etherscan.io")
         Dim request = New RestRequest("/api", Method.Get)
